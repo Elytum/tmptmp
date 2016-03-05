@@ -1,0 +1,40 @@
+{:uriI"‰file://app/assets/templates/order.hbs?type=text/x-handlebars-template&id=b22072b12359e9d01c8d1f661881708163f6f60efe55bb7e230e0df645572834:ET:load_pathI"app/assets/templates;T:filenameI"#app/assets/templates/order.hbs;T:	nameI"
+order;T:logical_pathI"order.hbs;T:content_typeI"text/x-handlebars-template;T:sourceI"@<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="DÃ©part...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-xs-12 -->
+</div><!-- /.row -->
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="ArrivÃ©e...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-xs-12 -->
+</div><!-- /.row -->
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group">
+      <input type="number" name="quantity" min="1" max="5" value="0">
+      <i class="fa fa-suitcase fa-2x"></i>&nbsp;
+      <input type="number" name="quantity" min="1" max="5" value="0">
+      <i class="fa fa-suitcase fa-3x"></i>&nbsp;
+      <input type="number" name="quantity" min="1" max="5" value="0">
+      <i class="fa fa-suitcase fa-4x"></i>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group">
+      <input class="btn btn-default pull-right" type="submit" value="Commander">
+    </div>
+  </div>
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Tprocessors:type=text/x-handlebars-template&file_type=text/x-handlebars-template;TTI"1file-digest://app/assets/templates/order.hbs;TT:charsetI"
+utf-8;F:digest"% u+tÁY!VùD7ÊB2óÈ\¬Ük9±.êt-ù:lengthi@:dependencies_digest"%3Ð‰f½ö¿Ý‡‹k¢÷ZðéûGÕŒ·øÝµè‚š9©/’:idI"Eb22072b12359e9d01c8d1f661881708163f6f60efe55bb7e230e0df645572834;F:
+mtimel+ƒTÛV

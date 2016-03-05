@@ -1,0 +1,89 @@
+
+
+
+
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">Acceuil</a></li>
+    <li><a href="#profile" data-toggle="tab">Nouveau trajet</a></li>
+    <li><a href="#messages" data-toggle="tab">Anciens trajets</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content " style="padding-top:3%;">
+	<div id="home" class="tab-pane active">
+		SALUT
+	</div>
+
+	<div id="profile" class="tab-pane">
+
+		<div class="container">
+			<%= bootstrap_form_tag url: '/new' do |f| %>
+
+
+							<div class="form-inputs" ng-app="mapsApp" ng-controller="MapCtrl">
+								<div id="form1">
+									<div class="form-group">
+										<label class="control-label" for="depart_addr">
+											Addresse de départ
+										</label>
+										<input required="required" class="form-control" name="depart_addr" id="depart_addr" type="text" ng-model="departAddr">
+									</div>
+									<a href="#" class="btn btn-login btn-primary btn-float"  ng-click="getCities('map', 0)">Chercher un point relai</a>
+									<div id="map" style="display:none;"></div>
+									<div id="class" ng-repeat="marker in markers[0] | orderBy : 'title'">
+										<div class="radio">
+											<label for="_depart_relai_requiredtrue">
+												<input ng-click="openInfoWindow($event, marker)" type="radio" value="{:required=>true}" name="[depart_relai]" id="_depart_relai_requiredtrue">
+												{{marker.title}}
+											</label>
+										</div>
+									</div>
+									<a href="#" id="val0" class="btn btn-login btn-primary btn-float" style="display:none;"  onclick="$('#form1').hide();$('#form2').show();">Valider</a>
+								</div>
+								<div id="form2" style="display:none">
+									<div class="form-group">
+										<label class="control-label" for="final_addr">
+											Addresse de déstination
+										</label>
+										<input required="required" class="form-control" name="final_addr" id="final_addr" type="text" ng-model="finalAddr">
+									</div>
+									<a href="#" class="btn btn-login btn-primary btn-float"  ng-click="getCities('map2', 1)">Chercher un point relai</a>
+									<div id="map2"  style="display:none;"></div>
+									<div id="class" ng-repeat="marker in markers[1] | orderBy : 'title'">
+										<div class="radio">
+											<label for="_final_relai_requiredtrue">
+												<input ng-click="openInfoWindow($event, marker)" type="radio" value="{:required=>true}" name="[final_relai]" id="_final_relai_requiredtrue">
+												{{marker.title}}
+											</label>
+										</div>
+									</div>
+									<a href="#" id="val1" class="btn btn-login btn-primary btn-float"  style="display:none;" onclick="$('#form2').hide();$('#form3').show();">Valider</a>
+								</div>
+							</div>
+							<div id="form3"  style="display:none">	
+								<%= f.datetime_select :date, required: true %>
+								<%= f.number_field :poid, required: true %>
+								<%= f.number_field :volume, required: true %>
+								//foreach resultat api camion
+								<%= f.radio_button :trajet, required: true %>
+
+								<div class="form-actions">
+									<%= f.submit "Payer et confirmer" %>
+								</div>
+							</div>
+			<% end %>
+		</div>
+
+	</div>
+
+	<div id="messages" class="tab-pane">
+	</div>
+</div>
+
+
+<script>
+  $('#myTab a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+</script>

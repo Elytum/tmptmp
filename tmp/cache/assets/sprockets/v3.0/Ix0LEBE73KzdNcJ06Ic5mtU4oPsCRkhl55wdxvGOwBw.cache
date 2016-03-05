@@ -1,0 +1,13 @@
+I"Ð(function() {
+  window.Trackandtrace = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Routers: {},
+    initialize: function() {
+      return alert('Hello from Benoit!');
+    }
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,54 @@
+{:uriI"âfile://app/assets/templates/order.hbs?type=text/x-handlebars-template&id=8f8bddc58e6f50911097aa1e4ba3a550d24f9dad07d97b7420b450afe7b6a06f:ET:load_pathI"app/assets/templates;T:filenameI"#app/assets/templates/order.hbs;T:	nameI"
+order;T:logical_pathI"order.hbs;T:content_typeI"text/x-handlebars-template;T:sourceI"Û<div class="order">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="D√©part...">
+      </div><!-- /input-group -->
+    </div><!-- /.col-xs-12 -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Arriv√©e...">
+      </div><!-- /input-group -->
+    </div><!-- /.col-xs-12 -->
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="form-group">
+        <input type="date" class="form-control" name="startDate">
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="form-group">
+        <input type="time" class="form-control" name="startTime">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <div class="form-group">
+        <input type="number" name="quantity" min="1" max="5" value="0">
+        <i class="fa fa-suitcase fa"></i>&nbsp;
+        <input type="number" name="quantity" min="1" max="5" value="0">
+        <i class="fa fa-suitcase fa-2x"></i>&nbsp;
+        <input type="number" name="quantity" min="1" max="5" value="0">
+        <i class="fa fa-suitcase fa-3x"></i>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <div class="form-group">
+        <input class="btn btn-default btn-lg" type="submit" value="R√©server">
+      </div>
+    </div>
+  </div>
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Tprocessors:type=text/x-handlebars-template&file_type=text/x-handlebars-template;TTI"1file-digest://app/assets/templates/order.hbs;TT:charsetI"
+utf-8;F:digest"%êãÆ˜ôØHm+≠ë¡]H÷Æ—éqS]∞Íú.,&:lengthiÛ:dependencies_digest"%ºíi:{:ª#EÓ‰≥£ßÂÔcy…V2ôY¶µ®UÖ:idI"E8f8bddc58e6f50911097aa1e4ba3a550d24f9dad07d97b7420b450afe7b6a06f;F:
+mtimel+m€V

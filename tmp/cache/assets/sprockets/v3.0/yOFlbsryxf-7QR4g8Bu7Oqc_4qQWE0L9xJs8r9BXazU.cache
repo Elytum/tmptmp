@@ -1,0 +1,23 @@
+{:uriI"Œfile://app/assets/templates/tracking.hbs?type=text/x-handlebars-template&id=8202b68c304ab2abdb83360a273d7159114f6d3500ea173b93eee96412db5597:ET:load_pathI"app/assets/templates;T:filenameI"&app/assets/templates/tracking.hbs;T:	nameI"tracking;T:logical_pathI"tracking.hbs;T:content_typeI"text/x-handlebars-template;T:sourceI"<div class="row">
+  <div class="col-xs-6">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+      <input type="text" class="form-control" placeholder="Search for...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-xs-6 -->
+  <div class="col-xs-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-xs-6 -->
+</div><!-- /.row -->;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"Tprocessors:type=text/x-handlebars-template&file_type=text/x-handlebars-template;TTI"4file-digest://app/assets/templates/tracking.hbs;TT:charsetI"
+utf-8;F:digest"%ôâêª’1“c%…óµÌ3¬‰—j–ÓÎ³D¬ZT«:lengthi:dependencies_digest"%ªîÃvëıõ
+a§ïÔùE9~æŸëSJKEwÅ§ª:idI"E8202b68c304ab2abdb83360a273d7159114f6d3500ea173b93eee96412db5597;F:
+mtimel+ƒTÛV
