@@ -3,6 +3,8 @@
 
 //Data
 //Angular App Module and Controller
+//   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+//                async defer></script>
          origin = '41 rue Jussieu';
           arrcities = [];
           n = 0;
