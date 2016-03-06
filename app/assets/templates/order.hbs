@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-xs-9">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Départ...">
+        <input type="text" class="form-control" placeholder="Départ..." ng-model="departAddr">
       </div>
     </div>
     <div class="col-xs-3">
       <div class="form-group">
-        <input class="btn btn-primary" type="button" value="Choisir">
+        <input class="btn btn-primary" type="button" value="Choisir" ng-click="getCities('map', 0)">
       </div>
     </div>
   </div><!-- /.row -->
@@ -55,5 +55,6 @@
     </div>
   </div>
   
- <div id="map" style="widht: 500px;height: 400px;"></div>
+ <div id="map" style="display:none;widht: 500px;height: 400px;"></div>
+ <div id="map2" style="display:none; width: 500px;height: 400px;"></div>
 </div>
