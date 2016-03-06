@@ -66,9 +66,13 @@
               var xhr = new XMLHttpRequest();
               xhr.open("GET", 'http://api-adresse.data.gouv.fr/search/?q='+origin, false);
               xhr.send();
-              console.log(xhr.status);
-              console.log(xhr.statusText);
+              jsonified = JSON.parse(xhr.response);
+              longitude = jsonified.features[0].geometry.coordinates[0];
+              latitude = jsonified.features[0].geometry.coordinates[1];
+              console.log(longitude);
+              console.log(latitude);
             }
+            initMap();
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
               async defer></script>
