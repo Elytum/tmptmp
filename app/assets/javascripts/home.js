@@ -23,17 +23,17 @@
 
               }
               function initMap() {
-                var mapDiv = document.getElementById('map');
-                map = new google.maps.Map(mapDiv, {
-                  center: {lat: 44.540, lng: -78.546},
-                  zoom: 8
-                });
                 var xhr = new XMLHttpRequest();
                 xhr.open("GET", 'http://api-adresse.data.gouv.fr/search/?q='+origin, false);
                 xhr.send();
                 jsonified = JSON.parse(xhr.response);
                 longitude = jsonified.features[0].geometry.coordinates[0];
                 latitude = jsonified.features[0].geometry.coordinates[1];
+                var mapDiv = document.getElementById('map');
+                map = new google.maps.Map(mapDiv, {
+                  center: {lat: latitude, lng: longitude},
+                  zoom: 8
+                });
                 xhr.open("GET", 'https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont2&geofilter.distance=' + latitude + ',' + longitude + ',5000', false);
                 xhr.send();
                 res = JSON.parse(xhr.response).records;
