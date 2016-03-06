@@ -56,12 +56,18 @@
   </div>
           <div id="map" style="widht: 500px;height: 400px;"></div>
           <script>
+            origin = '41 rue Jussieu'
             function initMap() {
               var mapDiv = document.getElementById('map');
               var map = new google.maps.Map(mapDiv, {
                 center: {lat: 44.540, lng: -78.546},
                 zoom: 8
               });
+              var xhr = new XMLHttpRequest();
+              xhr.open("GET", 'http://api-adresse.data.gouv.fr/search/?q='+origin, false);
+              xhr.send();
+              console.log(xhr.status);
+              console.log(xhr.statusText);
             }
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
