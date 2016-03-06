@@ -54,31 +54,6 @@
       </div>
     </div>
   </div>
-          <div id="map" style="widht: 500px;height: 400px;"></div>
-          <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-              async defer></script>
-          <script>
-            origin = '41 rue Jussieu'
-            function initMap() {
-              var mapDiv = document.getElementById('map');
-              var map = new google.maps.Map(mapDiv, {
-                center: {lat: 44.540, lng: -78.546},
-                zoom: 8
-              });
-              var xhr = new XMLHttpRequest();
-              xhr.open("GET", 'http://api-adresse.data.gouv.fr/search/?q='+origin, false);
-              xhr.send();
-              jsonified = JSON.parse(xhr.response);
-              longitude = jsonified.features[0].geometry.coordinates[0];
-              latitude = jsonified.features[0].geometry.coordinates[1];
-              console.log(longitude);
-              console.log(latitude);
-              xhr.open("GET", 'https://datanova.laposte.fr/api/records/1.0/search/?dataset=laposte_poincont2&geofilter.distance=' + latitude + ',' + longitude + ',5000', false);
-              xhr.send();
-            }
-            initMap();
-          </script>
-
-
-
+  
+ <div id="map" style="widht: 500px;height: 400px;"></div>
 </div>
