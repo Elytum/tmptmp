@@ -49,7 +49,7 @@
             }
             console.log(arrcities);
           }
-          // initMap();
+          initMap();
 
 
 
